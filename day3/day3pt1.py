@@ -1,6 +1,6 @@
-def main(data):
+def main(rucksacks):
     prioritySum = 0
-    for rucksack in data:
+    for rucksack in rucksacks:
         firstCompartment = rucksack[:len(rucksack)//2]
         secondCompartment = rucksack[len(rucksack)//2:]
         commonItem = set(firstCompartment) & set(secondCompartment)
