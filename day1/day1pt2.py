@@ -1,4 +1,4 @@
-from heapq import heappop, heappush, heapify, nlargest
+from heapq import heappush, nlargest
 
 def main(inventory):
     currElf = 0
@@ -8,7 +8,6 @@ def main(inventory):
         for i in line:
             currElf += int(i)
         heappush(heap,currElf)
-    print(heap)
     return sum(nlargest(3,heap))
     
 with open('inputData.txt','r') as file:
